@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="src/main/resources/templates/style.css">
+<title>Fredriks Examensuppgift</title>
+</head>
+<body>
+	<h2>Fredrik Karmstens Landing Page</h2>
+	<div>
+		<h3>Welcome</h3>
+		<p>you can modify the URL with the following</p>
+	</div>
+	<div>
+		<p>------------------------------------------------------------------------------</p>
+		<h5>"/calc"</h5>
+		<p>for calculator, you must give the calculator val1 & val2
+		& operation values</p>
+		<p>example: /calc?val1=10&val2=100&operation=*</p>
+		<p>note that "+" works in the format of "%2b"</p>
+		<p>other viable operations is "/", "*", "-", and of course "%2b"</p>
+		
+	</div>
+	<div>
+		<p>------------------------------------------------------------------------------</p>
+		<h5>"/img"</h5>
+		<p>provides you with one of two random images of me snowboarding, you can generate the other picture by refreshing the page</p>
+		
+	</div>
+	<div>
+		<p>------------------------------------------------------------------------------</p>
+		<h5>"/csv"</h5>
+		<p>prints sample.csv document to Json format</p>
+		
+	</div>
+	<div>
+		<p>------------------------------------------------------------------------------</p>
+		<h5>"rps" (POST)</h5>
+		
+	<p>You can play Rock Paper Scissors against the computer by filling out the form below</p>
+	<p>by refreshing the URL you will get a Json formatted result in GET</p>
+	<form action="http://localhost:8080/rps"  method="POST">
+
+        <label for="rps">Choose a option:</label>
+		<select id="rps" name="userInput">
+  			<option value="rock">Rock</option>
+  			<option value="paper">Paper</option>
+  			<option value="scissor">Scissor</option>
+		</select>
+        <input type="submit" value="go">
+ 	</form>
+        <p>------------------------------------------------------------------------------</p>
+	</div>
+
+</body>
+</html>
